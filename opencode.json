@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "system",
+  "model": "anthropic/claude-sonnet-4-20250514",
+  "autoupdate": true,
+  "disabled_providers": ["bedrock"],
+  "agent": {
+    "code-reviewer": {
+      "description": "Reviews code for best practices, potential issues, and security concerns",
+      "model": "anthropic/claude-sonnet-4-20250514",
+      "prompt": "You are a code reviewer. Focus on security, performance, maintainability, and best practices. Analyze code for potential vulnerabilities, inefficiencies, and opportunities for improvement.",
+      "tools": {
+        "write": false,
+        "edit": false
+      }
+    }
+  }
+}
